@@ -103,6 +103,15 @@ int main(int argc, char *argv[]) {
     int dataSize(0);
     for (int payload(32768); payload <= 32768; payload*=2){
         dataSize = payload;
+
+        std::cout << "//*************************************************************//" << std::endl;
+        std::cout << "//*************************************************************//" << std::endl;
+        std::cout << "THIS IS proposed design, configured with 2 sub-ranks." << std::endl;
+        std::cout << "Simulating performance and power with different stride parameters." << std::endl;
+        std::cout << "Payload Size: " << DATA_SIZE*64*100/(1024.0*1024.0) << "MB " << std::endl;
+        std::cout << "---------------------" << std::endl;
+        std::cout << "---------------------" << std::endl;
+
     	for (int stride =1; stride <= STRIDE; stride*=2){
 
         if (xcl::is_emulation()) {
@@ -154,6 +163,7 @@ int main(int argc, char *argv[]) {
         }
         q.finish();
 
+
         // Start timer
         double kernel_time_in_sec = 0;
         std::chrono::duration<double> kernel_time(0);
@@ -179,9 +189,8 @@ int main(int argc, char *argv[]) {
         kernel_time = std::chrono::duration<double>(kernel_end - kernel_start);
         kernel_time_in_sec = kernel_time.count();
         std::cout << "STRIDE: " << stride * 64  << "B" << std::endl;
-        std::cout << "Execution time = " << kernel_time_in_sec << std::endl;
+        std::cout << "Execution time: " << kernel_time_in_sec << std::endl;
         //double bw_result = DATA_SIZE*64*100/ (kernel_time_in_sec) /(1024*1024*1024);
-        std::cout << "Payload Size: " << DATA_SIZE*64*100/(1024.0*1024.0) << "MB " << std::endl;
 
 	//DRAM (DDR4) power estimation
 	double scale_factor = 0.88;
