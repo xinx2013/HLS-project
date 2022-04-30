@@ -13,7 +13,7 @@
 #include "krnl_config.h"
 
 #define NUM_KERNEL 1
-#define NUM_PORT 2
+#define NUM_PORT 4
 
 //HBM Banks requirements
 #define MAX_HBM_BANKCOUNT 32
@@ -133,6 +133,14 @@ int main(int argc, char *argv[]) {
                 source_in_ext[1].obj = read_source.data();
                 source_in_ext[1].param = 0;
                 source_in_ext[1].flags = XCL_MEM_DDR_BANK1;
+
+                source_in_ext[2].obj = read_source.data();
+                source_in_ext[2].param = 0;
+                source_in_ext[2].flags = XCL_MEM_DDR_BANK2;
+
+                source_in_ext[3].obj = read_source.data();
+                source_in_ext[3].param = 0;
+                source_in_ext[3].flags = XCL_MEM_DDR_BANK3;
         }
 
         // These commands will allocate memory on the FPGA. The cl::Buffer objects can
@@ -184,15 +192,15 @@ int main(int argc, char *argv[]) {
         std::cout << "Payload Size: " << DATA_SIZE*64*100/(1024.0*1024.0) << "MB " << std::endl;
 
 	//DRAM (DDR4) power estimation
-	double scale_factor = 0.88;
-        double ph = (1 - (double)stride/2/64);
+	double scale_factor = 0.79;
+        double ph = (1 - (double)stride/4/64);
         double activation_power = (125.8*scale_factor) * (1 - ph)/0.9;
         double background_power = 72.8/scale_factor;
         double read_write_power = 90.8*scale_factor + 19.4;
 
 	if (ph <= 0){
 	    ph = 1/64;
-            activation_power = (125.8/2) * (1 - ph)/0.9;
+            activation_power = (125.8/4) * (1 - ph)/0.9;
             background_power = 72.8;
             read_write_power = 90.8 + 19.4;
 	}

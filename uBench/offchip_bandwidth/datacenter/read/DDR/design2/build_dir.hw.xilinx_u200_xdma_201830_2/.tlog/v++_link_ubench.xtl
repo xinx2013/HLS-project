@@ -1,0 +1,647 @@
+<ENTRY>
+{
+ "session": {
+  "name": "v++_link_ubench",
+  "pid": "0",
+  "uuid": "312b5f13-879e-498a-a72e-743bf3b9ac2d",
+  "description": "",
+  "timestamp": "0",
+  "outputFiles": [
+   {
+    "type": "JSON",
+    "mode": "CLIENT_ONLY",
+    "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/.tlog/v++_link_ubench.xtl",
+    "continuous": true
+   },
+   {
+    "type": "JSON",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin.link_summary",
+    "continuous": true
+   },
+   {
+    "type": "BINARY_PROTOBUF",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin.link_summary.pb",
+    "continuous": true
+   }
+  ]
+ },
+ "thisFile": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/.tlog/v++_link_ubench.xtl",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Apr 30 03:59:53 2022",
+ "timestampMillis": "1651305593653",
+ "buildStep": {
+  "cmdId": "90cdd4b4-71ef-4fbf-b068-7a460ce52e48",
+  "name": "v++",
+  "logFile": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/link.steps.log",
+  "commandLine": "/ihome/crc/install/xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u200_xdma_201830_2 --save-temps --temp_dir ./build_dir.hw.xilinx_u200_xdma_201830_2 -l --config ./ubench.ini -obuild_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin _x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u200_xdma_201830_2",
+   "--save-temps",
+   "--temp_dir",
+   "./build_dir.hw.xilinx_u200_xdma_201830_2",
+   "-l",
+   "--config",
+   "./ubench.ini",
+   "-obuild_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin",
+   "_x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/ubench.ini",
+    "content": "[connectivity]\nslr=krnl_ubench_1:SLR1\nsp=krnl_ubench_1.in0:DDR[0]\nsp=krnl_ubench_1.in1:DDR[1]\nsp=krnl_ubench_1.in2:DDR[2]\nsp=krnl_ubench_1.in3:DDR[3]\n\nnk=krnl_ubench:1\n"
+   }
+  ]
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 03:59:53 2022",
+ "timestampMillis": "1651305593654",
+ "status": {
+  "cmdId": "90cdd4b4-71ef-4fbf-b068-7a460ce52e48",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Apr 30 04:00:09 2022",
+ "timestampMillis": "1651305609049",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_xdma_201830_2.xpfm",
+  "hardwareDsa": "xilinx_u200_xdma_201830_2.dsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_xdma_201830_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "ubench",
+    "file": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin",
+    "reports": []
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "krnl_ubench",
+     "file": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/_x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo",
+     "reports": []
+    },
+    "sources": [
+     "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xo/krnl_ubench/krnl_ubench/cpu_sources/krnl_ubench.cpp"
+    ],
+    "cuNames": [
+     "krnl_ubench_1"
+    ]
+   }
+  ]
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 04:00:09 2022",
+ "timestampMillis": "1651305609317",
+ "buildStep": {
+  "cmdId": "1c9c5248-a37b-4c8d-a2b0-f67e57a9b8f9",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/_x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo -keep --config /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u200_xdma_201830_2/xilinx_u200_xdma_201830_2.xpfm --target hw --output_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int --temp_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/sys_link",
+  "args": [
+   "--xo",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/_x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo",
+   "-keep",
+   "--config",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u200_xdma_201830_2/xilinx_u200_xdma_201830_2.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int",
+   "--temp_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/sys_link"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:09 2022",
+ "timestampMillis": "1651305609318",
+ "status": {
+  "cmdId": "1c9c5248-a37b-4c8d-a2b0-f67e57a9b8f9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:26 2022",
+ "timestampMillis": "1651305626811",
+ "status": {
+  "cmdId": "1c9c5248-a37b-4c8d-a2b0-f67e57a9b8f9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 04:00:26 2022",
+ "timestampMillis": "1651305626817",
+ "buildStep": {
+  "cmdId": "c6f038fa-efbf-418b-91a9-504a05ebfd72",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/sdsl.dat -rtd /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/cf2sw.rtd -xclbin /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xclbin_orig.xml -o /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/sdsl.dat",
+   "-rtd",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/cf2sw.rtd",
+   "-xclbin",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xclbin_orig.xml",
+   "-o",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:26 2022",
+ "timestampMillis": "1651305626818",
+ "status": {
+  "cmdId": "c6f038fa-efbf-418b-91a9-504a05ebfd72",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:28 2022",
+ "timestampMillis": "1651305628661",
+ "status": {
+  "cmdId": "c6f038fa-efbf-418b-91a9-504a05ebfd72",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 04:00:28 2022",
+ "timestampMillis": "1651305628666",
+ "buildStep": {
+  "cmdId": "229a2cc9-6227-4cc5-88fe-b8d799839738",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram --rtdJsonFileName /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/cf2sw.rtd --diagramJsonFileName /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModel.json --platformFilePath /opt/xilinx/platforms/xilinx_u200_xdma_201830_2/xilinx_u200_xdma_201830_2.xpfm --generatedByName v++ --generatedByVersion 2019.2 --generatedByChangeList 2708876 --generatedByTimeStamp Wed Nov  6 21:39:14 MST 2019 --generatedByOptions /ihome/crc/install/xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw --platform xilinx_u200_xdma_201830_2 --save-temps --temp_dir ./build_dir.hw.xilinx_u200_xdma_201830_2 -l --config ./ubench.ini -obuild_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin _x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo  --generatedByXclbinName ubench --kernelInfoDataFileName /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/kernel_info.dat",
+  "args": [
+   "--rtdJsonFileName",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/cf2sw.rtd",
+   "--diagramJsonFileName",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModel.json",
+   "--platformFilePath",
+   "/opt/xilinx/platforms/xilinx_u200_xdma_201830_2/xilinx_u200_xdma_201830_2.xpfm",
+   "--generatedByName",
+   "v++",
+   "--generatedByVersion",
+   "2019.2",
+   "--generatedByChangeList",
+   "2708876",
+   "--generatedByTimeStamp",
+   "Wed Nov  6 21:39:14 MST 2019",
+   "--generatedByOptions",
+   "/ihome/crc/install/xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw --platform xilinx_u200_xdma_201830_2 --save-temps --temp_dir ./build_dir.hw.xilinx_u200_xdma_201830_2 -l --config ./ubench.ini -obuild_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin _x.hw.xilinx_u200_xdma_201830_2/krnl_ubench.xo ",
+   "--generatedByXclbinName",
+   "ubench",
+   "--kernelInfoDataFileName",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/kernel_info.dat"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:28 2022",
+ "timestampMillis": "1651305628667",
+ "status": {
+  "cmdId": "229a2cc9-6227-4cc5-88fe-b8d799839738",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:31 2022",
+ "timestampMillis": "1651305631352",
+ "status": {
+  "cmdId": "229a2cc9-6227-4cc5-88fe-b8d799839738",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 04:00:31 2022",
+ "timestampMillis": "1651305631358",
+ "buildStep": {
+  "cmdId": "f35a0f91-538c-4b85-adef-1f1094ffe661",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u200_xdma_201830_2 -s --output_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int --log_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/logs/link --report_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/reports/link --config /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/vplConfig.ini -k /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link --no-info --tlog_dir /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/.tlog/v++_link_ubench --iprepo /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xo/ip_repo/xilinx_com_hls_krnl_ubench_1_0 --messageDb /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/run_link/vpl.pb /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u200_xdma_201830_2",
+   "-s",
+   "--output_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int",
+   "--log_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/logs/link",
+   "--report_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/reports/link",
+   "--config",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/vplConfig.ini",
+   "-k",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link",
+   "--no-info",
+   "--tlog_dir",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/.tlog/v++_link_ubench",
+   "--iprepo",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xo/ip_repo/xilinx_com_hls_krnl_ubench_1_0",
+   "--messageDb",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/run_link/vpl.pb",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 04:00:31 2022",
+ "timestampMillis": "1651305631359",
+ "status": {
+  "cmdId": "f35a0f91-538c-4b85-adef-1f1094ffe661",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:10 2022",
+ "timestampMillis": "1651318750595",
+ "status": {
+  "cmdId": "f35a0f91-538c-4b85-adef-1f1094ffe661",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 07:39:10 2022",
+ "timestampMillis": "1651318750603",
+ "buildStep": {
+  "cmdId": "6dc15257-59e3-40c1-adb8-2dc2b05da276",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:10 2022",
+ "timestampMillis": "1651318750604",
+ "status": {
+  "cmdId": "6dc15257-59e3-40c1-adb8-2dc2b05da276",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 30 07:39:10 2022",
+ "timestampMillis": "1651318750615",
+ "report": {
+  "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 07:39:10 2022",
+ "timestampMillis": "1651318750624",
+ "buildStep": {
+  "cmdId": "b3216b57-8a63-477b-aeb4-056421bd29d1",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/address_map.xml -sdsl /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/sdsl.dat -xclbin /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xclbin_orig.xml -rtd /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.rtd -o /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xml",
+  "args": [
+   "-a",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/address_map.xml",
+   "-sdsl",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/sdsl.dat",
+   "-xclbin",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.rtd",
+   "-o",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xml"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:10 2022",
+ "timestampMillis": "1651318750625",
+ "status": {
+  "cmdId": "b3216b57-8a63-477b-aeb4-056421bd29d1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:12 2022",
+ "timestampMillis": "1651318752576",
+ "status": {
+  "cmdId": "b3216b57-8a63-477b-aeb4-056421bd29d1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 07:39:12 2022",
+ "timestampMillis": "1651318752578",
+ "buildStep": {
+  "cmdId": "c501d1e0-c5f4-4cd3-85d5-801341d014d6",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram --rtdJsonFileName /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.rtd --diagramJsonFileName /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModel_resource_use.json --diagramWithAddressesAndSlrsJsonFileName /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModelSlrBaseAddress.json",
+  "args": [
+   "--rtdJsonFileName",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.rtd",
+   "--diagramJsonFileName",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModel_resource_use.json",
+   "--diagramWithAddressesAndSlrsJsonFileName",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:12 2022",
+ "timestampMillis": "1651318752579",
+ "status": {
+  "cmdId": "c501d1e0-c5f4-4cd3-85d5-801341d014d6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:14 2022",
+ "timestampMillis": "1651318754841",
+ "status": {
+  "cmdId": "c501d1e0-c5f4-4cd3-85d5-801341d014d6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:14 2022",
+ "timestampMillis": "1651318754843",
+ "status": {
+  "cmdId": "6dc15257-59e3-40c1-adb8-2dc2b05da276",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 07:39:14 2022",
+ "timestampMillis": "1651318754848",
+ "buildStep": {
+  "cmdId": "0edd7328-9709-44e6-836a-9424716f802c",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/partial.bit --force --key-value SYS:mode:hw_pr --add-section :JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.rtd --append-section :JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench_xml.rtd --add-section BUILD_METADATA:JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench_build.rtd --add-section EMBEDDED_METADATA:RAW:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xml --add-section SYSTEM_METADATA:RAW:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModelSlrBaseAddress.json --output /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/partial.bit",
+   "--force",
+   "--key-value",
+   "SYS:mode:hw_pr",
+   "--add-section",
+   ":JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.rtd",
+   "--append-section",
+   ":JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--output",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xclbin"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:14 2022",
+ "timestampMillis": "1651318754849",
+ "status": {
+  "cmdId": "0edd7328-9709-44e6-836a-9424716f802c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:15 2022",
+ "timestampMillis": "1651318755749",
+ "status": {
+  "cmdId": "0edd7328-9709-44e6-836a-9424716f802c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Apr 30 07:39:15 2022",
+ "timestampMillis": "1651318755754",
+ "buildStep": {
+  "cmdId": "cd6d6b46-967e-4a1c-98db-4bfb73262a49",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --info /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xclbin.info --input /ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xclbin.info",
+   "--input",
+   "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/link/int/ubench.xclbin"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:15 2022",
+ "timestampMillis": "1651318755755",
+ "status": {
+  "cmdId": "cd6d6b46-967e-4a1c-98db-4bfb73262a49",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:16 2022",
+ "timestampMillis": "1651318756504",
+ "status": {
+  "cmdId": "cd6d6b46-967e-4a1c-98db-4bfb73262a49",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 30 07:39:16 2022",
+ "timestampMillis": "1651318756526",
+ "report": {
+  "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/reports/link/system_estimate_ubench.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 30 07:39:16 2022",
+ "timestampMillis": "1651318756708",
+ "report": {
+  "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/reports/link/v++_link_ubench_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 30 07:39:16 2022",
+ "timestampMillis": "1651318756709",
+ "report": {
+  "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/v++_link_ubench_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Apr 30 07:39:19 2022",
+ "timestampMillis": "1651318759393",
+ "report": {
+  "path": "/ihome/ece2195_2022s/xix59/HLS/proj/testsubmit/HLS-project/uBench/offchip_bandwidth/datacenter/read/DDR/design2/build_dir.hw.xilinx_u200_xdma_201830_2/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Apr 30 07:39:19 2022",
+ "timestampMillis": "1651318759399",
+ "status": {
+  "cmdId": "90cdd4b4-71ef-4fbf-b068-7a460ce52e48",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
