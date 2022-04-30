@@ -18,7 +18,7 @@ cd baseline
 cd ../design
 ./ubench build_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin
 ```
-* run proposed design with 4 sub-ranks (optional)
+* run proposed design with 4 sub-ranks **(optional)**
 ```
 cd ../design2
 ./ubench build_dir.hw.xilinx_u200_xdma_201830_2/ubench.xclbin
